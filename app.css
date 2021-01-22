@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+    background-color: #1d1e22;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #629b56;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+span {
+    text-align: center;
+    color: lightgray;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    min-height: 250px;
+    min-width: 250px;
+    border: 1px solid gray;
+    border-radius: 5%;
+    margin: 10px;
+    background-color: rgb(16,16,35);
+}
+
+#generate-text {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    align-items: center;
+    font-size: 60px;
+}
+
+button {
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkgray;
+    border-radius: 5%;
+    width: 50px;
+    height: 50px;
+    background-color: #629b56;
+    box-shadow: 5px 10px 10px #0a0a0a;
+}
+
+.generate-icon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    background: url('img/arrow-clockwise.svg') no-repeat;
+    background-size: contain;
+}
+
+.color-info {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid lightgray;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom: none;
+    background-color: #151515;
+}
+
+@media (max-device-width : 800px) {
+    .color-container {
+        width: 80%;
+        height: 300px;
+        margin: 20px;
+    }
+
+    button {
+        height: 100px;
+        width: 250px;
+        margin-top: 50px;
+    }
+
+    #generate-text {
+        flex-direction: column;
+        font-size: 60px;
+    }
+
+    .generate-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    span {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .color-info {
+        flex-direction: row;
+    }
+}
